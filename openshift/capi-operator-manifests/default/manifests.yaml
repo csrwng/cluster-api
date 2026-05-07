@@ -24591,6 +24591,9 @@ webhooks:
   failurePolicy: Fail
   matchPolicy: Equivalent
   name: default.cluster.cluster.x-k8s.io
+  namespaceSelector:
+    matchLabels:
+      kubernetes.io/metadata.name: openshift-cluster-api
   rules:
   - apiGroups:
     - cluster.x-k8s.io
@@ -24613,6 +24616,9 @@ webhooks:
   failurePolicy: Fail
   matchPolicy: Equivalent
   name: default.clusterresourceset.addons.cluster.x-k8s.io
+  namespaceSelector:
+    matchLabels:
+      kubernetes.io/metadata.name: openshift-cluster-api
   rules:
   - apiGroups:
     - addons.cluster.x-k8s.io
@@ -24635,6 +24641,9 @@ webhooks:
   failurePolicy: Fail
   matchPolicy: Equivalent
   name: default.extensionconfig.runtime.addons.cluster.x-k8s.io
+  namespaceSelector:
+    matchLabels:
+      kubernetes.io/metadata.name: openshift-cluster-api
   rules:
   - apiGroups:
     - runtime.cluster.x-k8s.io
@@ -24657,6 +24666,9 @@ webhooks:
   failurePolicy: Fail
   matchPolicy: Equivalent
   name: default.machine.cluster.x-k8s.io
+  namespaceSelector:
+    matchLabels:
+      kubernetes.io/metadata.name: openshift-cluster-api
   rules:
   - apiGroups:
     - cluster.x-k8s.io
@@ -24679,6 +24691,9 @@ webhooks:
   failurePolicy: Fail
   matchPolicy: Equivalent
   name: default.machinedeployment.cluster.x-k8s.io
+  namespaceSelector:
+    matchLabels:
+      kubernetes.io/metadata.name: openshift-cluster-api
   rules:
   - apiGroups:
     - cluster.x-k8s.io
@@ -24701,6 +24716,9 @@ webhooks:
   failurePolicy: Fail
   matchPolicy: Equivalent
   name: default.machinehealthcheck.cluster.x-k8s.io
+  namespaceSelector:
+    matchLabels:
+      kubernetes.io/metadata.name: openshift-cluster-api
   rules:
   - apiGroups:
     - cluster.x-k8s.io
@@ -24723,6 +24741,9 @@ webhooks:
   failurePolicy: Fail
   matchPolicy: Equivalent
   name: default.machinepool.cluster.x-k8s.io
+  namespaceSelector:
+    matchLabels:
+      kubernetes.io/metadata.name: openshift-cluster-api
   rules:
   - apiGroups:
     - cluster.x-k8s.io
@@ -24745,6 +24766,9 @@ webhooks:
   failurePolicy: Fail
   matchPolicy: Equivalent
   name: default.machineset.cluster.x-k8s.io
+  namespaceSelector:
+    matchLabels:
+      kubernetes.io/metadata.name: openshift-cluster-api
   rules:
   - apiGroups:
     - cluster.x-k8s.io
@@ -24777,6 +24801,9 @@ webhooks:
   failurePolicy: Ignore
   matchPolicy: Equivalent
   name: validation.ipaddress.ipam.cluster.x-k8s.io
+  namespaceSelector:
+    matchLabels:
+      kubernetes.io/metadata.name: openshift-cluster-api
   rules:
   - apiGroups:
     - ipam.cluster.x-k8s.io
@@ -24800,6 +24827,9 @@ webhooks:
   failurePolicy: Ignore
   matchPolicy: Equivalent
   name: validation.ipaddressclaim.ipam.cluster.x-k8s.io
+  namespaceSelector:
+    matchLabels:
+      kubernetes.io/metadata.name: openshift-cluster-api
   rules:
   - apiGroups:
     - ipam.cluster.x-k8s.io
@@ -24823,6 +24853,9 @@ webhooks:
   failurePolicy: Fail
   matchPolicy: Equivalent
   name: validation.cluster.cluster.x-k8s.io
+  namespaceSelector:
+    matchLabels:
+      kubernetes.io/metadata.name: openshift-cluster-api
   rules:
   - apiGroups:
     - cluster.x-k8s.io
@@ -24846,6 +24879,9 @@ webhooks:
   failurePolicy: Fail
   matchPolicy: Equivalent
   name: validation.clusterclass.cluster.x-k8s.io
+  namespaceSelector:
+    matchLabels:
+      kubernetes.io/metadata.name: openshift-cluster-api
   rules:
   - apiGroups:
     - cluster.x-k8s.io
@@ -24869,6 +24905,9 @@ webhooks:
   failurePolicy: Fail
   matchPolicy: Equivalent
   name: validation.clusterresourceset.addons.cluster.x-k8s.io
+  namespaceSelector:
+    matchLabels:
+      kubernetes.io/metadata.name: openshift-cluster-api
   rules:
   - apiGroups:
     - addons.cluster.x-k8s.io
@@ -24891,6 +24930,9 @@ webhooks:
   failurePolicy: Fail
   matchPolicy: Equivalent
   name: validation.clusterresourcesetbinding.addons.cluster.x-k8s.io
+  namespaceSelector:
+    matchLabels:
+      kubernetes.io/metadata.name: openshift-cluster-api
   rules:
   - apiGroups:
     - addons.cluster.x-k8s.io
@@ -24913,6 +24955,9 @@ webhooks:
   failurePolicy: Fail
   matchPolicy: Equivalent
   name: validation.extensionconfig.runtime.cluster.x-k8s.io
+  namespaceSelector:
+    matchLabels:
+      kubernetes.io/metadata.name: openshift-cluster-api
   rules:
   - apiGroups:
     - runtime.cluster.x-k8s.io
@@ -24935,6 +24980,9 @@ webhooks:
   failurePolicy: Fail
   matchPolicy: Equivalent
   name: validation.machine.cluster.x-k8s.io
+  namespaceSelector:
+    matchLabels:
+      kubernetes.io/metadata.name: openshift-cluster-api
   rules:
   - apiGroups:
     - cluster.x-k8s.io
@@ -24957,6 +25005,9 @@ webhooks:
   failurePolicy: Fail
   matchPolicy: Equivalent
   name: validation.machinedeployment.cluster.x-k8s.io
+  namespaceSelector:
+    matchLabels:
+      kubernetes.io/metadata.name: openshift-cluster-api
   rules:
   - apiGroups:
     - cluster.x-k8s.io
@@ -24979,6 +25030,9 @@ webhooks:
   failurePolicy: Fail
   matchPolicy: Equivalent
   name: validation.machinedrainrule.cluster.x-k8s.io
+  namespaceSelector:
+    matchLabels:
+      kubernetes.io/metadata.name: openshift-cluster-api
   rules:
   - apiGroups:
     - cluster.x-k8s.io
@@ -25001,6 +25055,9 @@ webhooks:
   failurePolicy: Fail
   matchPolicy: Equivalent
   name: validation.machinehealthcheck.cluster.x-k8s.io
+  namespaceSelector:
+    matchLabels:
+      kubernetes.io/metadata.name: openshift-cluster-api
   rules:
   - apiGroups:
     - cluster.x-k8s.io
@@ -25023,6 +25080,9 @@ webhooks:
   failurePolicy: Fail
   matchPolicy: Equivalent
   name: validation.machinepool.cluster.x-k8s.io
+  namespaceSelector:
+    matchLabels:
+      kubernetes.io/metadata.name: openshift-cluster-api
   rules:
   - apiGroups:
     - cluster.x-k8s.io
@@ -25045,6 +25105,9 @@ webhooks:
   failurePolicy: Fail
   matchPolicy: Equivalent
   name: validation.machineset.cluster.x-k8s.io
+  namespaceSelector:
+    matchLabels:
+      kubernetes.io/metadata.name: openshift-cluster-api
   rules:
   - apiGroups:
     - cluster.x-k8s.io
